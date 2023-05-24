@@ -2,6 +2,6 @@ version: "3.9"
 
 services:
   dyndns:
-    env_file: dyndns.env
+    env_file: config/dyndns.env
     image: nortismo/dynu-ddns-updater
     restart: always
