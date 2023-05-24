@@ -1,0 +1,28 @@
+# About
+
+This is a set of docker containers to run the applications used by our association.
+
+# Installation
+
+## Prerequisites
+
+Please install the latest version of docker, do not use the outdated package that ships with the distribution (most likely armbian), as described here: https://docs.docker.com/engine/install/debian/
+
+## Setup
+
+* Check out this repository
+* Copy the private configuration files from the shared drive (configuration/eco services) to the same directory
+
+## Start
+
+Simply run `./start.sh`
+
+# Configuration
+
+## Dyndns
+
+Private environment settings are defined in the file `dyndns.env` for the following variables (see https://hub.docker.com/r/nortismo/dynu-ddns-updater)
+
+DYNU_USERNAME:: our dynu.com username
+DYNU_PASSWORD:: the 'client' password defined there
+DYNU_DDNS_DOMAIN:: the public DNS name defined there
